@@ -1,0 +1,10 @@
+{
+  "cards": [
+    { "name": "Карточка №1", "text": "Интересный текст", "image_class": "image_1", "id": "1" },
+    { "name": "Карточка №2", "text": "Тоже информативно", "image_class": "image_2", "id": "2" },
+    { "name": "Карточка №3", "text": "Супер просто", "image_class": "image_3", "id": "3" },
+    { "name": "Карточка №4", "text": "Мега сложно", "image_class": "image_4", "id": "4" },
+    { "name": "Карточка №5", "text": "Все еще сложно", "image_class": "image_4", "id": "5" },
+    { "name": "Карточка №6", "text": "Описание", "image_class": "image_5", "id": "6" }
+  ]
+}

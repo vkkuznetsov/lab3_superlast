@@ -1,0 +1,252 @@
+/* Стили для изображений */
+.image_1 {
+  display: flex;
+  background-color: #cdb4db;
+  width: 300px;
+  height: 300px;
+  border: 2px solid;
+  border-radius: 10%;
+}
+
+.image_2 {
+  display: flex;
+  background-color: #ffc8dd;
+  width: 300px;
+  height: 300px;
+  border: 2px solid;
+  border-radius: 10%;
+}
+
+.image_3 {
+  display: flex;
+  background-color: #ffafcc;
+  width: 300px;
+  height: 300px;
+  border: 2px solid;
+  border-radius: 10%;
+}
+
+.image_4 {
+  display: flex;
+  background-color: #bde0fe;
+  width: 300px;
+  height: 300px;
+  border: 2px solid;
+  border-radius: 10%;
+}
+
+.image_5 {
+  display: flex;
+  background-color: #a2d2ff;
+  width: 300px;
+  height: 300px;
+  border: 2px solid;
+  border-radius: 10%;
+}
+
+/* Стили для хедера */
+.flex_container {
+  display: flex;
+  justify-content: center;
+  background-color: #845896; /* Фоновый цвет хедера */
+  padding: 20px; /* Внутренние отступы */
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  border: 3px solid;
+  border-radius: 40px;
+}
+
+.flex_logo {
+  margin-right: 20px;
+}
+
+.text_container {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 24px; /* Размер текста */
+  color: #fff; /* Цвет текста */
+}
+
+.flex_button {
+  margin-left: 20px;
+}
+
+.text_button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #8d2fa0; /* Цвет кнопки */
+  color: #fff; /* Цвет текста кнопки */
+  border-radius: 5px;
+}
+
+/* Стили для заголовка */
+.flex_heading {
+  margin: 30px;
+  
+  display: flex;
+  
+  
+  padding: 20px 0;
+  
+  border-radius: 20px;
+}
+
+.flex_heading h1 {
+  font-size: 36px; /* Размер шрифта заголовка */
+  color: #333; /* Цвет заголовка */
+  background-color: #e2e2e2; /* Фоновый цвет надписи */
+  width: auto;
+  margin: 0 auto; /* Центрирование по оси X */
+  padding:20px;
+  border-radius: 30px;
+}
+
+
+
+
+/* Стили для модального окна */
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-body {
+  margin: auto;
+}
+
+/* Стили для контейнера карточек */
+.card-container {
+  margin-bottom: 2000px;
+}
+
+/* Стили для футера */
+.flex_footer {
+  background-color: #845896;
+  padding: 20px;
+}
+
+.flex_footer .container {
+  width: 800px;
+}
+
+.flex_footer .row {
+  height: 50px;
+  align-items: center;
+}
+
+.full-name {
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.flex_footer img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.flex_footer img:hover {
+  opacity: 0.4;
+}
+
+/* Дополнительные стили */
+.flex_objects_element {
+  flex-direction: column;
+  word-wrap: normal;
+  width: 300px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.flex_logo {
+  width: 50px;
+  height: 70px;
+  margin-top: 15px;
+  margin-left: 100px;
+}
+
+.flex_button {
+  display: flex;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f629db;
+  width: 100px;
+  height: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.flex_button :hover {
+  cursor: pointer;
+}
+
+.flex_image {
+  width: 90px;
+  height: 20px;
+  background-color: #b3e5fc;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.text_logo {
+  color: white;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.text_container {
+  font-size: 40px;
+  margin: auto;
+  color: #ffffff;
+}
+
+.text_button {
+  color: white;
+  margin: auto;
+  font-size: 16px;
+}
+
+.text_object_name {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.text_object_info {
+  font-size: 16px;
+}
+
+.footer_images {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 420px;
+  margin-left: auto;
+  align-content: center;
+}
+
+.toast {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

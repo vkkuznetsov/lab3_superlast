@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <link rel = "stylesheet" href = "style.css" type = "text/css">
+        <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    </head>
+
+    <title>
+        Лабораторная работа 3
+    </title>
+
+    <body>
+
+        <div class="flex_container">
+            <div class="row">
+              <ul class="nav justify-content-center" style="width: 100%; height: 150px; background-color: #845896; border: 3px solid;">
+                <li class="col-sm">
+                  <div class="flex_logo">
+                    <img src="https://media.tenor.com/eojLEiSJMZMAAAAC/%D1%81%D0%B5%D1%80%D0%B5%D0%B3%D0%B0%D0%BF%D0%B8%D1%80%D0%B0%D1%82-%D1%81%D0%B5%D1%80%D0%B5%D0%B3%D0%B0.gif" style="height: 110px; width: 140px; border-radius: 20%;">
+                  </div>
+                </li>
+                <li class="col-sm" style="margin-top: auto; margin-bottom: auto;">
+                  <div class="text_container">
+                    Personal site @Vkkuznetsov
+                  </div>
+                </li>
+                <li class="col-sm" style="margin-top: auto; margin-bottom: auto;">
+                  <div class="flex_button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="text_button" id="toastbtn">
+                      Загрузить
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+
+          <div class="flex_heading">
+            <h1>
+              Коллекция карточек
+            </h1>
+          </div>
+          
+        <div id = "root">
+            <script id = "template" type = "text/x-handlebars-template">
+                <div class = "container" style = "width: 1000px;">
+                    <div class = "row gy-5">
+                        {{#each cards}}
+                        <div class = "col-sm">
+                            <div class="card" style="width: 300px; border-radius: 10%;">
+                                <div class = "{{image_class}}"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title">{{name}}</h5>
+                                    <p class="card-text">{{text}}</p>
+                                    <button type="button" class="btn btn-primary" id = "{{id}}" data-bs-toggle="modal" data-bs-target="#exampleModal" style = "background-color: #8d2fa0;">Изменить</button>
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </script>
+        </div>
+        
+        <div class = "flex_footer mt-5">
+            <div class = "container" style = "width: 800px;">
+                <div class = "row" style = "height: 50px;">
+                    <div class="col-md-auto col-sm" style="margin-top: auto; margin-bottom: auto;">
+                        <span class="full-name">Кузнецов</span> <span class="full-name">Виктор</span>
+                    </div>
+                    <div class = "col-md-auto col-sm" style = "margin-left: auto; margin-top: auto; margin-bottom: auto;">
+                        <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/512px-Telegram_logo.svg.png" style = "width: 50px; height: 50px;">
+                        <img src = "https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png" style = "width: 50px; height: 50px;">
+                        <img src = "https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" style = "width: 50px; height: 50px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title "></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Название карточки:</p>
+                    <input id = "create_name" type="text" />
+
+                    <p>Текст карточки:</p>
+                    <input id = "create_text" type="text" />
+
+
+                    <p>Цвет карточки:</p>
+                    <select id = "selector">
+
+                        <option>Цвета:</option>
+                        <option value = "#004d99" style = "background: #cdb4db"></option>
+                        <option value = "#0066cc" style = "background: #ffc8dd"></option>
+                        <option value = "#0080ff" style = "background: #ffafcc"></option>
+                        <option value = "#3399ff" style = "background: #bde0fe"></option>
+                        <option value = "#66b3ff" style = "background: #a2d2ff"></option>
+
+                    </select>
+                    <div class = "row" style = "margin: 20px;">
+                        <button type = "button" id = "save" style = "background-color: #9364af; width: 100px; height: 30px; margin-right: 10px;">Сохранить</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <script type = "module" src = "script.js"></script>
+        <script src = "https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script src = "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+</html>
